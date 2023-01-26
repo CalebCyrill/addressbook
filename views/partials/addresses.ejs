@@ -1,0 +1,20 @@
+<%- include("partials/tableheader") %> 
+      <tr>
+        <th>Street</th>
+        <th>Town</th>
+        <th>Zip Code</th>
+        <th>State</th>
+        <th>Country</th>
+        <th>Comment</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <% addresses.forEach(address => {
+      <tr><%= address.street %></tr>
+      <tr><%= address.town %></tr>
+      <tr><%= address.zip_code %></tr>
+      <tr><%= address.state %></tr>
+      <tr><%= address.country %></tr>
+      <tr><%= address.comment %></tr>
+    }); %>
+<%- include("partials/tablefooter") %> 

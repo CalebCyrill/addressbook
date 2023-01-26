@@ -1,0 +1,12 @@
+<%- include("partials/tableheader") %> 
+      <tr>
+        <th>email</th>
+        <th>comment</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <% emails.forEach(email => {
+      <tr><%= email.email %></tr>
+      <tr><%= email.comment %></tr>
+    }); %>
+<%- include("partials/tablefooter") %> 

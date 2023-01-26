@@ -1,0 +1,12 @@
+<%- include("partials/tableheader") %> 
+      <tr>
+        <th>phone number</th>
+        <th>comment</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <% phonenumbers.forEach(phone => {
+      <tr><%= phone.phone_number %></tr>
+      <tr><%= phone.comment %></tr>
+    }); %>
+<%- include("partials/tablefooter") %> 
