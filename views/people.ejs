@@ -1,0 +1,14 @@
+<%- include("partials/tableheader") %> 
+      <tr>
+        <th>Salutation</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <% people.forEach(person => {
+      <tr><%= person.Salutations %></tr>
+      <tr><%= person.firstname %></tr>
+      <tr><%= person.lastname %></tr>
+    }); %>
+<%- include("partials/tablefooter") %> 
